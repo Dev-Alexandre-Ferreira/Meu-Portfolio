@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="scroll-restoration" content="manual" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
+    <script src="  https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/icon.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Potfólio | Alexandre Ferreira</title>
+  </head>
+  <body>
+    <header class="header container">
+      <h2>Port<span class="logoDetail">Fólio.</span></h2>
+      <nav>
+        <ul class="menu">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#experiencia">Experiência</a></li>
+          <li><a href="#formacao">Formação</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="sectionUm container">
+        <div class="sectionUmFoto">
+          <img src="./img/perfil.jpeg" alt="" />
+        </div>
+
+        <div class="sectionUmTexto">
+          <h2>Olá, me chamo</h2>
+          <h1 class="nome">Alexandre Ferreira</h1>
+          <h3>Desenvolvedor Full Stack e UI/Ux Design.</h3>
+        </div>
+      </section>
+
+      <section id="sobre" class="sectionDois">
+        <div class="sectionDoisTexto container">
+          <h2>Sobre mim</h2>
+          <p class="textoMim">
+            Me chamo <b>Alexandre Ferreira</b>, sou um profissional apaixonado
+            por conhecimento, com sólida experiência no ramo de Design gráfico,
+            Arte finalista, Ui/UX design, Fotografia e Desenvolvimento Web.
+            Minha trajetória é marcada por um forte compromisso com a excelência
+            e a busca por soluções criativas para desafios complexos.<br />
+            <br />Acredito que a chave para o sucesso no ambiente corporativo é
+            a capacidade de colaborar, inovar e aprender constantemente. Tenho
+            uma abordagem equilibrada capaz de manter a serenidade em momentos
+            de pressão e, ao mesmo tempo, trazer energia e agilidade para
+            atingir resultados.<br />
+            <br />Além de minha experiência técnica, busco constantemente me
+            aprimorar e estou sempre atento às tendências e mudanças do mercado.
+            Acredito que a adaptabilidade é essencial para o crescimento e, por
+            isso, estou sempre em busca de novos desafios que me permitam
+            expandir meu conhecimento.
+          </p>
+        </div>
+      </section>
+
+      <section class="experiencia" id="experiencia">
+        <h2 class="subtitulo">Experiência</h2>
+        <div>
+          <p class="experiencia-texto">
+            Desenvolvo pequenos no tempo livre trabalhando como autônomo
+            utilizando apenas
+            <strong>HTML</strong>, <strong>CSS</strong> e
+            <strong>JavaScript</strong>. <br />
+            <br />Também sou professor de <strong> Front-End</strong> no projeto
+            <strong>Transforme-se</strong> do <strong>PROA</strong> em parceria
+            com <strong>Serasa Experience.</strong>
+          </p>
+
+          <div class="empresa">
+            <span class="empresa-ano">2025</span>
+            <h3 class="empresa-titulo">Transformasie</h3>
+            <span class="empresa-titulo">Desenvolvedor Front-End</span>
+            <p class="empresa-texto">
+              No projeto Transformasie eu trabalhei como UI/UX Design e
+              desenvolvedor Front-End na criação de um site institucional para
+              um empresa do ramo de inteligência financeira.
+            </p>
+            <ul class="empresa-habilidades">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>UX Design</li>
+              <li>UI Design</li>
+              <li>Figma</li>
+            </ul>
+          </div>
+
+          <div class="empresa">
+            <span class="empresa-ano">2025</span>
+            <h3 class="empresa-titulo">Ponto Norte</h3>
+            <span class="empresa-titulo">Desenvolvedor Front-End</span>
+            <p class="empresa-texto">
+              No Projeto Ponto-Norte eu trabalhei como Desenvolvedor FullStack E
+              ScrumMaster da equipe, para o Desenvolvimento de uma plataforma
+              que conecta guias certificados a intusiastas de trilhas.
+            </p>
+            <ul class="empresa-habilidades">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Figma</li>
+              <li>MySQL</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section  class="formacao-sec" id="formacao">
+        <div class="formacao">
+        <h2 class="subtitulo">Formação</h2>
+        <div>
+          <p class="formacao-texto">
+           Minha mais recente experiência foi como Desenvolvedor FullStack Java, pelo Instituto PROA e o Senac.
+            
+          </p>
+
+          <div class="tipos">
+
+          <div class="formacao-inst">
+            <span class="formacao-ano">2025</span>
+            <h3 class="formacao-titulo">Desenvolvedor FullStack Java</h3>
+            <span class="formacao-local">Instituto Proa</span>
+          </div>
+
+            <div class="formacao-inst">
+            <span class="formacao-ano">2025</span>
+            <h3 class="formacao-titulo">Web Development Fundamentals</h3>
+            <span class="formacao-local">IBM</span>
+          </div>
+
+            <div class="formacao-inst">
+            <span class="formacao-ano">2024</span>
+            <h3 class="formacao-titulo">HTML e CSS</h3>
+            <span class="formacao-local">Origamid</span>
+          </div>
+</div>
+         
+        </div>
+      </section>
+      </div>
+
+      <section class="projetos" id="projetos">
+        <div class="container">
+          <h2 class="project-titulo">Projetos</h2>
+          <div class="container-itens">
+
+            <div class="itens">
+              <div class="logo-projeto">
+                <a href="https://dev-alexandre-ferreira.github.io/bicKraftCompleto/" target="_blank">
+              <img src="./projects/bk.png" alt="">
+              </a>
+              </div>
+              <h3>Bickraft</h3>
+            </div>
+
+               <div class="itens">
+              <div class="logo-projeto">
+                <a href="https://transformasie.com.br/index.html" target="_blank">
+              <img src="./projects/Tf.png" alt="">
+              </a>
+              </div>
+              <h3>Transformasie</h3>
+            </div>
+
+            <div class="itens">
+              <div class="logo-projeto">
+                <a href="https://ponto-norte-5ivc-alexandres-projects-e8210aaa.vercel.app/" target="_blank">
+              <img src="./projects/pn.png" alt="">
+              </a>
+              </div>
+              <h3>Ponto Norte</h3>
+            </div>
+
+            
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container-footer">
+        <div class="esquerda">
+          <h2>Alexandre Ferreira</h2>
+          <p>O conhecimento transforma, mas a curiosidade é o que nos move..</p>
+        </div>
+        <div class="direita">
+          <ul>
+            <li><a href="https://github.com/Dev-Alexandre-Ferreira" target="_blank"><img src="./assets/git.svg" alt=""></a></li>
+            <li><a href="mailto:Dev.Alexandre1@outlook.com" ><img src="./assets/email.svg" alt=""></a></li>
+            <li><a href="www.linkedin.com/in/dev-alexandreferreira" target="_blank"><img src="./assets/linkedin.svg" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="roda">PortFólio. Todos os direitos reservados</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
