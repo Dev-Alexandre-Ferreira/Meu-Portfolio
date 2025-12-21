@@ -80,3 +80,18 @@ gsap.from(projetos, {
   opacity: 0,
   duration: 0.5,
 });
+
+function Menu() {
+  const menu = document.querySelector('.botao');
+  const escolha = document.querySelector('.menu-hamburguer');
+  menu.addEventListener('click', () => {
+    escolha.classList.toggle('toggle');
+  });
+
+   window.addEventListener('scroll', () => {
+    escolha.classList.remove('toggle');
+  });
+
+}
+
+document.addEventListener('DOMContentLoaded', Menu);
