@@ -9,7 +9,6 @@
 
 body {
   background-color: #efefef;
-  height: 2000px;
 }
 
 .container {
@@ -210,6 +209,11 @@ b {
   color: #20261c;
 }
 
+.separa {
+  display: grid;
+  gap: 20px;
+}
+
 .empresa {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -309,8 +313,7 @@ b {
 }
 
 .tipos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   gap: 20px;
   position: relative;
 }
@@ -545,16 +548,12 @@ b {
     margin-bottom: 50px;
   }
 
-  .formacao .subtitulo::before {
-    top: 150px;
-    content: '';
-    width: 100px;
-    height: 5px;
-    background-color: #efefef;
-    position: absolute;
+  .tipos {
+    flex-wrap: wrap;
   }
+
   .formacao {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
 }
@@ -571,6 +570,10 @@ b {
   }
   .sectionUmTexto h3 {
     font-size: 1.3rem;
+  }
+
+  .formacao {
+    grid-template-columns: 1fr;
   }
 
   .experiencia {
@@ -785,5 +788,123 @@ b {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
+  .subtitulo {
+    font-size: 70px;
+  }
+
+  .formacao .subtitulo {
+    font-size: 70px;
+  }
+
+  .container-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .direita {
+    justify-self: center;
+  }
+
+  .direita ul {
+    margin-bottom: 30px;
+  }
+  .roda {
+    margin-top: 30px;
+  }
+
+  .esquerda {
+    text-align: center;
+    justify-items: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 610px) {
+  .subtitulo {
+    font-size: 55px;
+  }
+
+  .empresa {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .formacao .subtitulo {
+    font-size: 55px;
+  }
+
+  .tipos {
+    flex-direction: column;
+  }
+
+  .formacao-inst {
+    width: 100%;
+    gap: 30px;
+  }
+
+  .formacao-texto {
+    font-size: 20px;
+  }
+
+  .subtitulo {
+    font-size: 50px;
+  }
+
+  .subtitulo::before {
+    top: 60px;
+  }
+
+  .formacao .subtitulo::before {
+    top: 60px;
+  }
+
+  .formacao-inst {
+    width: 90%;
+  }
+
+  .formacao,
+  .experiencia,
+  .container {
+    padding: 50px 30px;
+  }
+
+  .header {
+    padding: 20px 20px;
+  }
+
+  .sectionUm {
+    margin-top: 0px;
+  }
+
+  .sectionUm h1 {
+    font-size: 39px;
+  }
+
+  .sectionUm {
+    gap: 20px;
+  }
+
+  .formacao .subtitulo,
+  .subtitulo {
+    font-size: 48px;
+  }
+
+  .container-footer {
+    display: grid;
+    gap: 30px;
+    border: none;
+  }
+
+  .esquerda h2 {
+    font-size: 37px;
+  }
+
+  .direita {
+    margin: 0px;
+  }
+
+  .footer {
+    display: grid;
+    gap: 30px;
+  }
 }
