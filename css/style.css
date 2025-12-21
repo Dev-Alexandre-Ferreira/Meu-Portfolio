@@ -125,16 +125,13 @@ b {
   margin-bottom: 40px;
 }
 
-.menu {
-  display: none;
-}
-
-.active img {
+.header img {
   height: 30px;
 }
 
 .ancora {
   position: relative;
+  display: none;
 }
 
 .botao {
@@ -784,6 +781,14 @@ b {
   }
 
   .botao {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .ancora {
     display: block;
   }
 }
